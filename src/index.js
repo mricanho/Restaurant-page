@@ -53,5 +53,30 @@ tab3.setAttribute("class", "navbar-item");
 tab3.innerHTML = "Contact";
 navbarEnd.appendChild(tab3);
 
+const heroBody = document.createElement("div");
+heroBody.setAttribute("class", "hero-body py-6");
+section.appendChild(heroBody);
+
+const bodyContainer = document.createElement("div");
+bodyContainer.setAttribute("class", "container has-text-centered");
+heroBody.appendChild(bodyContainer);
+
+const title = document.createElement("p");
+title.setAttribute("class", "title");
+title.innerHTML = "ALL THE PANCAKES YOU CAN EAT";
+bodyContainer.appendChild(title);
+
+const tileA = document.createElement("figure");
+tileA.setAttribute("class", "image is-5by3");
+bodyContainer.appendChild(tileA);
+
+const tileV = document.createElement("img");
+tileV.setAttribute("src", "./assets/images/stack.png");
+tileA.appendChild(tileV);
+
+
+
+
+
 
 content.appendChild(section);
