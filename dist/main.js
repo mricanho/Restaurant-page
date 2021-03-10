@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector("div#content");e.innerHTML="Hello";const t=document.createElement("div");t.setAttribute("class","d-flex h-100 text-center text-white bg-dark"),e.appendChild(t)})();
