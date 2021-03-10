@@ -41,16 +41,19 @@
 
   const tab1 = document.createElement("a");
   tab1.setAttribute("class", "navbar-item");
+  tab1.setAttribute("id", "home");
   tab1.innerHTML = "Home";
   navbarEnd.appendChild(tab1);
 
   const tab2 = document.createElement("a");
   tab2.setAttribute("class", "navbar-item");
+  tab2.setAttribute("id", "menu");
   tab2.innerHTML = "Menu";
   navbarEnd.appendChild(tab2);
 
   const tab3 = document.createElement("a");
   tab3.setAttribute("class", "navbar-item");
+  tab3.setAttribute("id", "contact");
   tab3.innerHTML = "Contact";
   navbarEnd.appendChild(tab3);
 
@@ -63,7 +66,7 @@
   heroBody.appendChild(bodyContainer);
 
   const title = document.createElement("p");
-  title.setAttribute("class", "title");
+  title.setAttribute("class", "title mb-6");
   title.innerHTML = "ALL THE PANCAKES YOU CAN EAT";
   bodyContainer.appendChild(title);
 
@@ -72,6 +75,7 @@
   bodyContainer.appendChild(tileA);
 
   const tileV = document.createElement("img");
+  tileV.setAttribute("class", "pancakes");
   tileV.setAttribute("src", "./assets/images/stack.png");
   tileA.appendChild(tileV);
 
