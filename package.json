@@ -12,6 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/mricanho/Restaurant-page.git"
   },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Webpack"
+  ],
   "author": "Miguel Ricaño",
   "license": "MIT",
   "bugs": {
@@ -19,15 +25,27 @@
   },
   "homepage": "https://github.com/mricanho/Restaurant-page#readme",
   "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
     "babel-eslint": "10.1.x",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
     "eslint": "6.8.x",
     "eslint-config-airbnb-base": "14.1.x",
     "eslint-plugin-import": "2.20.x",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.3.9",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
     "stylelint": "13.3.x",
     "stylelint-config-standard": "20.0.x",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "3.17.x",
-    "webpack": "^5.24.4",
-    "webpack-cli": "^4.5.0"
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
