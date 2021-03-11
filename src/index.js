@@ -2,16 +2,31 @@ import home  from './modules/home';
 import menu from './modules/menu';
 import contact from './modules/contact';
 
-home();
-
-const clickHome = () => {
+const selectHome = () => {
   home();
+  alert('hi');
 };
 
-const clickMenu = () => {
-  menu();
+const selectMenu = () => {
+
+  alert("menu");
 };
 
-const clickContact = () => {
-  contact();
+const selectContact = () => {
+
+  alert('Contact');
 };
+
+const index = () => {
+  const homeClick = document.querySelector("a#home");
+  homeClick.addEventListener("click", selectHome);
+
+  const menuClick = document.querySelector("a#menu");
+  menuClick.addEventListener("click", selectMenu);
+  
+  const contactClick = document.querySelector("a#contact");
+  contactClick.addEventListener("click", selectContact);
+};
+
+home();
+index();
