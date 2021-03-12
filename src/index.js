@@ -6,3 +6,14 @@ import { renderPage } from './modules/helper';
 
 base();
 renderPage(home)();
+
+const tabs = [
+  { id: 'home', render: renderPage(home) },
+  { id: 'menu', render: renderPage(menu) },
+  { id: 'contact', render: renderPage(contact) },
+];
+
+tabs.forEach(tab => {
+  const tabButton = document.getElementById(tab.id);
+  tabButton.addEventListener('click', tab.render);
+});

@@ -1,3 +1,5 @@
+import { createTab } from "./helper";
+
 const base = () => {
   const content = document.querySelector("div#content");
   const section = document.createElement("section");
@@ -35,26 +37,8 @@ const base = () => {
 
   const navbarEnd = document.createElement("div");
   navbarEnd.setAttribute("class", "navbar-end");
+  navbarEnd.setAttribute("id", "here-tab");
   menuHero.appendChild(navbarEnd);
-
-  const tab1 = document.createElement("a");
-  tab1.setAttribute("class", "navbar-item");
-  tab1.setAttribute("id", "home");
-  tab1.innerHTML = "Home";
-  navbarEnd.appendChild(tab1);
-
-  const tab2 = document.createElement("a");
-  tab2.setAttribute("class", "navbar-item");
-  tab2.setAttribute("id", "menu");
-  tab2.innerHTML = "Menu";
-  navbarEnd.appendChild(tab2);
-
-  const tab3 = document.createElement("a");
-  tab3.setAttribute("class", "navbar-item");
-  tab3.setAttribute("id", "contact");
-  tab3.innerHTML = "Contact";
-  navbarEnd.appendChild(tab3);
-
 
   }
 
@@ -87,6 +71,8 @@ const base = () => {
   nav();
   addSection();
   bodyContainer();
+
+  ["Home", "Menu", "Contact"].forEach(btn => createTab(btn));
 };
 
 export { base }

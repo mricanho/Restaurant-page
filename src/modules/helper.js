@@ -6,4 +6,13 @@ function renderPage(page) {
   };
 }
 
-export { renderPage };
+function createTab(name) {
+  const tab = document.createElement('a');
+  const navbarEnd = document.getElementById("here-tab")
+  tab.setAttribute('id', `${name.toLowerCase()}Tab`);
+  tab.className = 'navbar-item';
+  tab.textContent = name;
+  navbarEnd.appendChild(tab);
+}
+
+export { renderPage, createTab };
