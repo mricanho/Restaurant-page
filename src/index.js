@@ -1,16 +1,16 @@
 import { base } from './modules/base';
 import { home }  from './modules/home';
-import menu from './modules/menu';
-import contact from './modules/contact';
+import { menu } from './modules/menu';
+import { contact } from './modules/contact';
 import { renderPage } from './modules/helper';
 
 base();
 renderPage(home)();
 
 const tabs = [
-  { id: 'home', render: renderPage(home) },
-  { id: 'menu', render: renderPage(menu) },
-  { id: 'contact', render: renderPage(contact) },
+  { id: 'homeTab', render: renderPage(home) },
+  { id: 'menuTab', render: renderPage(menu) },
+  { id: 'contactTab', render: renderPage(contact) },
 ];
 
 tabs.forEach(tab => {
