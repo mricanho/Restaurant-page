@@ -1,11 +1,10 @@
- const home = {
-  renderAreaId: 'here-img',
-  render: (location) => {  
-    const tileV = document.createElement("img");
-    tileV.src = "./assets/images/stack.png";
-    location.textContent = "all the you can eat";
-    location.appendChild(tileV);
+import { createBox } from './helper';
+
+const home = {
+  renderAreaId: 'body-cont',
+  render: (location) => {
+    createBox(location, "ALL THE PANCAKES YOU CAN EAT", "./assets/images/stack.png")
   },
- };
+};
 
  export { home };

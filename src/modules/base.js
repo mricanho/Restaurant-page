@@ -72,7 +72,7 @@ const base = () => {
   addSection();
   bodyContainer();
 
-  ["Home", "Menu", "Contact"].forEach(btn => createTab(btn));
+  ["Home", "Menu", "Contact"].forEach(tab => createTab(tab));
 };
 
 export { base }
