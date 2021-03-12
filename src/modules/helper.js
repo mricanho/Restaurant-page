@@ -15,14 +15,27 @@ function createTab(name) {
   navbarEnd.appendChild(tab);
 }
 
-function createBox(location, text) {
+function createBox(location, text, link) {
   const box = document.createElement('div');
-  box.setAttribute("class", "box");
+  box.setAttribute("class", "box px-6");
   location.appendChild(box);
 
   const card = document.createElement("div");
-  card.setAttribute("class", "card");
+  card.setAttribute("class", "card mx-6 px-6");
   box.appendChild(card);
+
+  const cardImg = document.createElement("div");
+  cardImg.setAttribute("class", "card-image");
+  card.appendChild(cardImg);
+
+  const figure = document.createElement("figure");
+  figure.setAttribute("class", "image is-4by3");
+  cardImg.appendChild(figure);
+
+  const image = document.createElement("img");
+  image.setAttribute("src", link );
+  image.setAttribute("alt", "image-element");
+  figure.appendChild(image);
 
   const cardCont = document.createElement("div");
   cardCont.setAttribute("class", "card-content");

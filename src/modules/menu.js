@@ -1,7 +1,9 @@
+import { createBox } from './helper';
+
 const menu = {
   renderAreaId: 'body-cont',
   render: (location) => {
-    createBox(location, 'Contact me')
+    createBox(location, "World-Famous Buttermilk Pancakes & Crepes", "./assets/images/menu.jpg")
   },
 };
 
