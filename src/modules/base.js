@@ -2,8 +2,6 @@ const base = () => {
   const content = document.querySelector("div#content");
   const section = document.createElement("section");
 
-
-
   function nav() {
     const heroHead = document.createElement("div");
   heroHead.setAttribute("class", "hero-head");
@@ -74,13 +72,21 @@ const base = () => {
     bodyContainer.setAttribute("class", "container has-text-centered");
     bodyContainer.setAttribute("id", "body-cont");
     heroBody.appendChild(bodyContainer);
+
+    const title = document.createElement("p");
+    title.setAttribute("class", "title mb-6");
+    title.innerHTML = "ALL THE PANCAKES YOU CAN EAT";
+    bodyContainer.appendChild(title);
+
+    const tileA = document.createElement("figure");
+    tileA.setAttribute("class", "image is-5by3");
+    tileA.setAttribute("id", "here-img");
+    bodyContainer.appendChild(tileA);
   }
   
   nav();
-  
-  bodyContainer();
   addSection();
-
+  bodyContainer();
 };
 
-export { base };
+export { base }
