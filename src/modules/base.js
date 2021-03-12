@@ -74,4 +74,4 @@ const base = () => {
   ['Home', 'Menu', 'Contact'].forEach(tab => createTab(tab));
 };
 
-export { base };
+export default base;

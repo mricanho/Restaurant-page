@@ -7,4 +7,4 @@ const contact = {
   },
 };
 
-export { contact };
+export default contact;

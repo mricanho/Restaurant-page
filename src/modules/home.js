@@ -7,4 +7,4 @@ const home = {
   },
 };
 
-export { home };
+export default home;
