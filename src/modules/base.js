@@ -36,6 +36,7 @@ const base = () => {
 
   const navbarEnd = document.createElement("div");
   navbarEnd.setAttribute("class", "navbar-end");
+  navbarEnd.setAttribute("id", "here-tab");
   menuHero.appendChild(navbarEnd);
 
   const tab1 = document.createElement("a");
