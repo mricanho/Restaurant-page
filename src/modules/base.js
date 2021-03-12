@@ -4,7 +4,7 @@ const base = () => {
   const content = document.querySelector('div#content');
   const section = document.createElement('section');
 
-  function nav() {
+  const nav = () => {
     const heroHead = document.createElement('div');
     heroHead.setAttribute('class', 'hero-head');
     section.appendChild(heroHead);
@@ -41,12 +41,12 @@ const base = () => {
     menuHero.appendChild(navbarEnd);
   }
 
-  function addSection() {
+  const addSection = () => {
     section.setAttribute('class', 'hero is-info is-large');
     content.appendChild(section);
   }
 
-  function bodyContainer() {
+  const bodyContainer = () => {
     const heroBody = document.createElement('div');
     heroBody.setAttribute('class', 'hero-body py-6');
     section.appendChild(heroBody);
