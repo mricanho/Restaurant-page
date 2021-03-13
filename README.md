@@ -18,16 +18,20 @@ A simple restaurant page,  I used JavaScript alone to generate the entire conten
 ## How to start the project from your Local enviroment
 
 - Open your terminal and cd where you want to store the project
-- Run the following command:
+- To clone the repository run the following command:
 ```bash
-https://github.com/mricanho/Restaurant-page.git
+git clone https://github.com/mricanho/Restaurant-page.git
 ```
-- CD to the directory where you create the clone repository.
-- Run:
+- Change directory to point to the Restaurant-page dir.
+- Now run:
 ```bash
-npm run build
+npm install
 ```
-- Open the live server on your VScode `Alt + L` then `Alt + o`
+- Finally run:
+```bash
+npm start
+```
+- Go to the dist folder and select index.html, now Open the live server on your VScode `Alt + L` then `Alt + o`
 
 ## Author
 
