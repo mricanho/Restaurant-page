@@ -6,7 +6,7 @@ function renderPage(page) {
   };
 }
 
-function createTab(name) {
+const createTab = (name) => {
   const tab = document.createElement('a');
   const navbarEnd = document.getElementById('here-tab');
   tab.setAttribute('id', `${name.toLowerCase()}Tab`);
@@ -15,7 +15,7 @@ function createTab(name) {
   navbarEnd.appendChild(tab);
 }
 
-function createBox(location, text, link) {
+const createBox = (location, text, link) => {
   const box = document.createElement('div');
   box.setAttribute('class', 'box px-6');
   location.appendChild(box);
