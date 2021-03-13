@@ -13,7 +13,7 @@ const createTab = (name) => {
   tab.className = 'navbar-item';
   tab.textContent = name;
   navbarEnd.appendChild(tab);
-}
+};
 
 const createBox = (location, text, link) => {
   const box = document.createElement('div');
@@ -45,6 +45,6 @@ const createBox = (location, text, link) => {
   contentCard.setAttribute('class', 'content');
   contentCard.innerHTML = text;
   cardCont.appendChild(contentCard);
-}
+};
 
 export { renderPage, createTab, createBox };

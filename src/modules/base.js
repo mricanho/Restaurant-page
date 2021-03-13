@@ -39,12 +39,12 @@ const base = () => {
     navbarEnd.setAttribute('class', 'navbar-end');
     navbarEnd.setAttribute('id', 'here-tab');
     menuHero.appendChild(navbarEnd);
-  }
+  };
 
   const addSection = () => {
     section.setAttribute('class', 'hero is-info is-large');
     content.appendChild(section);
-  }
+  };
 
   const bodyContainer = () => {
     const heroBody = document.createElement('div');
@@ -65,7 +65,7 @@ const base = () => {
     tileA.setAttribute('class', 'image is-5by3');
     tileA.setAttribute('id', 'here-img');
     bodyContainer.appendChild(tileA);
-  }
+  };
 
   nav();
   addSection();
